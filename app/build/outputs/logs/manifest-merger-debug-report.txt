@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
+ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta5] /Users/ayaankhan/.gradle/caches/transforms-3/2581abc86e20cbae30b843d90144c4b8/transformed/jetified-pose-detection-18.0.0-beta5/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta5] /Users/ayaankhan/.gradle/caches/transforms-3/aa28178abdb99f1c25843dca892f8693/transformed/jetified-pose-detection-accurate-18.0.0-beta5/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta5] /Users/ayaankhan/.gradle/caches/transforms-3/6d44209b4cc3bc8a78403b701dcb0856/transformed/jetified-pose-detection-common-18.0.0-beta5/AndroidManifest.xml:2:1-35:12
@@ -64,22 +64,22 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ayaa
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ayaankhan/.gradle/caches/transforms-3/d650251a6d5d613952f5217960309790/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/ayaankhan/.gradle/caches/transforms-3/afbb4738553e7521c9693ecfc84f004b/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/ayaankhan/.gradle/caches/transforms-3/acf4ced50bc60d480a87df711d3c8ed0/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
+INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
 	package
 		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:5:5-43
 		INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
+		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
 		INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:4:5-51
 	android:versionCode
 		INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-112:12
+		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:2:1-68:12
 		INJECTED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:3:5-63
@@ -246,7 +246,7 @@ ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/s
 	android:name
 		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:23:22-62
 application
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:25:5-105:19
+ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:25:5-61:19
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta5] /Users/ayaankhan/.gradle/caches/transforms-3/2581abc86e20cbae30b843d90144c4b8/transformed/jetified-pose-detection-18.0.0-beta5/AndroidManifest.xml:7:5-20
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta5] /Users/ayaankhan/.gradle/caches/transforms-3/2581abc86e20cbae30b843d90144c4b8/transformed/jetified-pose-detection-18.0.0-beta5/AndroidManifest.xml:7:5-20
 MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta5] /Users/ayaankhan/.gradle/caches/transforms-3/aa28178abdb99f1c25843dca892f8693/transformed/jetified-pose-detection-accurate-18.0.0-beta5/AndroidManifest.xml:7:5-20
@@ -331,80 +331,28 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:47:17-76
 	android:name
 		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:47:27-74
-activity#com.google.mlkit.vision.demo.java.ChooserActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:51:9-54:20
+activity#com.google.mlkit.vision.demo.kotlin.LivePreviewActivity
+ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:51:9-55:20
 	android:exported
 		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:53:13-37
-	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:52:13-49
-activity#com.google.mlkit.vision.demo.java.LivePreviewActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:56:9-60:20
-	android:exported
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:58:13-37
 	android:theme
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:59:13-44
+		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:54:13-44
 	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:57:13-53
-activity#com.google.mlkit.vision.demo.java.CameraXLivePreviewActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:62:9-66:20
-	android:exported
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:64:13-37
-	android:theme
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:65:13-44
-	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:63:13-60
-activity#com.google.mlkit.vision.demo.java.StillImageActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:70:9-74:20
-	android:exported
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:72:13-37
-	android:theme
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:73:13-44
-	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:71:13-52
-activity#com.google.mlkit.vision.demo.kotlin.ChooserActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:76:9-79:20
-	android:exported
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:78:13-37
-	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:77:13-51
-activity#com.google.mlkit.vision.demo.kotlin.LivePreviewActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:81:9-85:20
-	android:exported
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:83:13-37
-	android:theme
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:84:13-44
-	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:82:13-55
-activity#com.google.mlkit.vision.demo.kotlin.CameraXLivePreviewActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:87:9-91:20
-	android:exported
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:89:13-37
-	android:theme
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:90:13-44
-	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:88:13-62
-activity#com.google.mlkit.vision.demo.kotlin.StillImageActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:95:9-99:20
-	android:exported
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:97:13-37
-	android:theme
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:98:13-44
-	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:96:13-54
+		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:52:13-55
 activity#com.google.mlkit.vision.demo.preference.SettingsActivity
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:101:9-103:39
+ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:57:9-59:39
 	android:exported
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:103:13-37
+		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:59:13-37
 	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:102:13-56
+		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:58:13-56
 queries
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:106:5-110:15
+ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:62:5-66:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:107:9-109:18
+ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:63:9-65:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:108:13-73
+ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:64:13-73
 	android:name
-		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:108:21-70
+		ADDED from /Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:64:21-70
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta5] /Users/ayaankhan/.gradle/caches/transforms-3/6d44209b4cc3bc8a78403b701dcb0856/transformed/jetified-pose-detection-common-18.0.0-beta5/AndroidManifest.xml:7:5-79
 MERGED from [androidx.work:work-runtime:2.7.0] /Users/ayaankhan/.gradle/caches/transforms-3/2697c31e5108e1ef51ea20ff1c24ee47/transformed/work-runtime-2.7.0/AndroidManifest.xml:26:5-79

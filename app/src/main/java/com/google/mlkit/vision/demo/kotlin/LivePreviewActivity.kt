@@ -21,9 +21,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.view.View
-import android.widget.AdapterView
-import android.widget.AdapterView.OnItemSelectedListener
-import android.widget.ArrayAdapter
+
 import android.widget.CompoundButton
 import android.widget.ImageView
 import android.widget.Spinner
@@ -44,7 +42,7 @@ import java.io.IOException
 /** Live preview demo for ML Kit APIs. */
 @KeepName
 class LivePreviewActivity :
-  AppCompatActivity(), OnItemSelectedListener, CompoundButton.OnCheckedChangeListener {
+  AppCompatActivity(), CompoundButton.OnCheckedChangeListener {
 
   private var cameraSource: CameraSource? = null
   private var preview: CameraSourcePreview? = null
@@ -66,18 +64,9 @@ class LivePreviewActivity :
       Log.d(TAG, "graphicOverlay is null")
     }
 
+    // Remove spinner since we only want pose detection
     val spinner = findViewById<Spinner>(R.id.spinner)
-    val options: MutableList<String> = ArrayList()
-    options.add(POSE_DETECTION)
-
-    // Creating adapter for spinner
-    val dataAdapter = ArrayAdapter(this, R.layout.spinner_style, options)
-
-    // Drop down layout style - list view with radio button
-    dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-    // attaching data adapter to spinner
-    spinner.adapter = dataAdapter
-    spinner.onItemSelectedListener = this
+    spinner.visibility = View.GONE
 
     val facingSwitch = findViewById<ToggleButton>(R.id.facing_switch)
     facingSwitch.setOnCheckedChangeListener(this)
@@ -92,20 +81,7 @@ class LivePreviewActivity :
     createCameraSource(selectedModel)
   }
 
-  @Synchronized
-  override fun onItemSelected(parent: AdapterView<*>?, view: View?, pos: Int, id: Long) {
-    // An item was selected. You can retrieve the selected item using
-    // parent.getItemAtPosition(pos)
-    selectedModel = parent?.getItemAtPosition(pos).toString()
-    Log.d(TAG, "Selected model: $selectedModel")
-    preview?.stop()
-    createCameraSource(selectedModel)
-    startCameraSource()
-  }
-
-  override fun onNothingSelected(parent: AdapterView<*>?) {
-    // Do nothing.
-  }
+  // Removed onItemSelected and onNothingSelected methods since we only use pose detection
 
   override fun onCheckedChanged(buttonView: CompoundButton, isChecked: Boolean) {
     Log.d(TAG, "Set facing")

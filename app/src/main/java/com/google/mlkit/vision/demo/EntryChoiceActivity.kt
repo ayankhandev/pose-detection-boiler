@@ -26,32 +26,25 @@ import android.util.Log
 import android.widget.TextView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.google.mlkit.vision.demo.java.ChooserActivity
+
 import java.util.ArrayList
 
 class EntryChoiceActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsResultCallback {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_vision_entry_choice)
-
-    findViewById<TextView>(R.id.java_entry_point).setOnClickListener {
-      val intent = Intent(this@EntryChoiceActivity, ChooserActivity::class.java)
-      startActivity(intent)
-    }
-
-    findViewById<TextView>(R.id.kotlin_entry_point).setOnClickListener {
-      val intent =
-        Intent(
-          this@EntryChoiceActivity,
-          com.google.mlkit.vision.demo.kotlin.ChooserActivity::class.java
-        )
-      startActivity(intent)
-    }
-
+    
     if (!allRuntimePermissionsGranted()) {
       getRuntimePermissions()
+    } else {
+      startPoseDetection()
     }
+  }
+  
+  private fun startPoseDetection() {
+    val intent = Intent(this, com.google.mlkit.vision.demo.kotlin.LivePreviewActivity::class.java)
+    startActivity(intent)
+    finish()
   }
 
   private fun allRuntimePermissionsGranted(): Boolean {
@@ -81,6 +74,20 @@ class EntryChoiceActivity : AppCompatActivity(), ActivityCompat.OnRequestPermiss
         permissionsToRequest.toTypedArray(),
         PERMISSION_REQUESTS
       )
+    }
+  }
+  
+  override fun onRequestPermissionsResult(
+    requestCode: Int,
+    permissions: Array<String>,
+    grantResults: IntArray
+  ) {
+    super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    if (allRuntimePermissionsGranted()) {
+      startPoseDetection()
+    } else {
+      Log.e(TAG, "Permissions not granted. Cannot start pose detection.")
+      finish()
     }
   }
 
