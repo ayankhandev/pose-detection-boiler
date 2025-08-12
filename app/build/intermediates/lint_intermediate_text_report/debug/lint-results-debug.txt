@@ -1,0 +1,310 @@
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:21: Warning: WRITE_EXTERNAL_STORAGE no longer provides write access when targeting Android 10+ [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/TemperatureMonitor.java:34: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+      if (sensor.getName().toLowerCase().contains("temperature")) {
+                           ~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.US) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:11: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdkVersion 34
+        ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:54: Warning: A newer version of org.jetbrains.kotlin:kotlin-stdlib-jdk7 than 1.9.0 is available: 2.1.0 [GradleDependency]
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:68: Warning: A newer version of com.google.code.gson:gson than 2.8.6 is available: 2.11.0 [GradleDependency]
+    implementation 'com.google.code.gson:gson:2.8.6'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:74: Warning: A newer version of androidx.test:core than 1.4.0 is available: 1.7.0 [GradleDependency]
+    androidTestImplementation 'androidx.test:core:1.4.0'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:77: Warning: A newer version of androidx.test:runner than 1.4.0 is available: 1.7.0 [GradleDependency]
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:78: Warning: A newer version of androidx.test:rules than 1.4.0 is available: 1.7.0 [GradleDependency]
+    androidTestImplementation 'androidx.test:rules:1.4.0'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:81: Warning: A newer version of androidx.test.ext:junit than 1.1.3 is available: 1.3.0 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:84: Warning: A newer version of androidx.lifecycle:lifecycle-livedata than 2.3.1 is available: 2.9.2 [GradleDependency]
+    implementation "androidx.lifecycle:lifecycle-livedata:2.3.1"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:85: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel than 2.3.1 is available: 2.9.2 [GradleDependency]
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.3.1"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:87: Warning: A newer version of androidx.appcompat:appcompat than 1.2.0 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:88: Warning: A newer version of androidx.annotation:annotation than 1.2.0 is available: 1.9.1 [GradleDependency]
+    implementation 'androidx.annotation:annotation:1.2.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:89: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.0.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:92: Warning: A newer version of androidx.camera:camera-camera2 than 1.0.0-SNAPSHOT is available: 1.5.0-beta02 [GradleDependency]
+    implementation "androidx.camera:camera-camera2:1.0.0-SNAPSHOT"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:93: Warning: A newer version of androidx.camera:camera-lifecycle than 1.0.0-SNAPSHOT is available: 1.5.0-beta02 [GradleDependency]
+    implementation "androidx.camera:camera-lifecycle:1.0.0-SNAPSHOT"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:94: Warning: A newer version of androidx.camera:camera-view than 1.0.0-SNAPSHOT is available: 1.5.0-beta02 [GradleDependency]
+    implementation "androidx.camera:camera-view:1.0.0-SNAPSHOT"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/BitmapUtils.java:70: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+  @RequiresApi(VERSION_CODES.LOLLIPOP)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/java/CameraXLivePreviewActivity.java:63: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+@RequiresApi(VERSION_CODES.LOLLIPOP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/kotlin/CameraXLivePreviewActivity.kt:58: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+@RequiresApi(VERSION_CODES.LOLLIPOP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/preference/CameraXLivePreviewPreferenceFragment.java:38: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+@RequiresApi(VERSION_CODES.LOLLIPOP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/preference/CameraXSourceDemoPreferenceFragment.java:27: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+@RequiresApi(VERSION_CODES.LOLLIPOP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/CameraXViewModel.java:33: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+@RequiresApi(VERSION_CODES.LOLLIPOP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/java/ChooserActivity.java:44: Warning: Unnecessary; SDK_INT is never < 21 [ObsoleteSdkInt]
+      VERSION.SDK_INT < VERSION_CODES.LOLLIPOP
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/java/ChooserActivity.java:55: Warning: Unnecessary; SDK_INT is never < 21 [ObsoleteSdkInt]
+      VERSION.SDK_INT < VERSION_CODES.LOLLIPOP
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/kotlin/ChooserActivity.kt:90: Warning: Unnecessary; SDK_INT is never < 21 [ObsoleteSdkInt]
+      if (VERSION.SDK_INT < VERSION_CODES.LOLLIPOP)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/kotlin/ChooserActivity.kt:102: Warning: Unnecessary; SDK_INT is never < 21 [ObsoleteSdkInt]
+      if (VERSION.SDK_INT < VERSION_CODES.LOLLIPOP)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/preference/PreferenceUtils.java:75: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+  @RequiresApi(VERSION_CODES.LOLLIPOP)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/java/VisionProcessorBase.java:212: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+  @RequiresApi(VERSION_CODES.LOLLIPOP)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/java/com/google/mlkit/vision/demo/kotlin/VisionProcessorBase.kt:208: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+  @RequiresApi(VERSION_CODES.LOLLIPOP)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/layout/activity_vision_cameraxsource_demo.xml:2: Warning: The resource R.layout.activity_vision_cameraxsource_demo appears to be unused [UnusedResources]
+<androidx.constraintlayout.widget.ConstraintLayout
+^
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/colors.xml:3: Warning: The resource R.color.colorPrimary appears to be unused [UnusedResources]
+    <color name="colorPrimary">#4CAF50</color>
+           ~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/colors.xml:4: Warning: The resource R.color.colorPrimaryDark appears to be unused [UnusedResources]
+    <color name="colorPrimaryDark">#388E3C</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/colors.xml:5: Warning: The resource R.color.colorAccent appears to be unused [UnusedResources]
+    <color name="colorAccent">#7C4DFF</color>
+           ~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/colors.xml:7: Warning: The resource R.color.blue_grey_400 appears to be unused [UnusedResources]
+    <color name="blue_grey_400">#78909C</color>
+           ~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/colors.xml:8: Warning: The resource R.color.light_grey_400 appears to be unused [UnusedResources]
+    <color name="light_grey_400">#E6E6E6</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/colors.xml:9: Warning: The resource R.color.light_green_700 appears to be unused [UnusedResources]
+    <color name="light_green_700">#689F38</color>
+           ~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/colors.xml:10: Warning: The resource R.color.gray appears to be unused [UnusedResources]
+    <color name="gray">#BFBFBF</color>
+           ~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/colors.xml:13: Warning: The resource R.color.red appears to be unused [UnusedResources]
+    <color name="red">#f44242</color>
+           ~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/dimens.xml:5: Warning: The resource R.dimen.padding_standard appears to be unused [UnusedResources]
+    <dimen name="padding_standard">10dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/mipmap-hdpi/ic_launcher.png: Warning: The resource R.mipmap.ic_launcher appears to be unused [UnusedResources]
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:6: Warning: The resource R.string.ok appears to be unused [UnusedResources]
+    <string name="ok" translatable="false">OK</string>
+            ~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:7: Warning: The resource R.string.permission_camera_rationale appears to be unused [UnusedResources]
+    <string name="permission_camera_rationale" translatable="false">Access to the camera is needed for detection</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:8: Warning: The resource R.string.no_camera_permission appears to be unused [UnusedResources]
+    <string name="no_camera_permission" translatable="false">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:9: Warning: The resource R.string.low_storage_error appears to be unused [UnusedResources]
+    <string name="low_storage_error" translatable="false">Face detector dependencies cannot be downloaded due to low device storage</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:10: Warning: The resource R.string.toggle_turn_on appears to be unused [UnusedResources]
+    <string name="toggle_turn_on" translatable="false">Front</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:11: Warning: The resource R.string.toggle_turn_off appears to be unused [UnusedResources]
+    <string name="toggle_turn_off" translatable="false">Back</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:15: Warning: The resource R.string.desc_cameraxsource_demo_activity appears to be unused [UnusedResources]
+    <string name="desc_cameraxsource_demo_activity" translatable="false">Object detection with custom classifier using ML Kit CameraXSource API. Note that CameraX is only supported on API 21+</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:16: Warning: The resource R.string.download_error appears to be unused [UnusedResources]
+    <string name="download_error" translatable="false">Download error</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:17: Warning: The resource R.string.start_over appears to be unused [UnusedResources]
+    <string name="start_over" translatable="false">Start over</string>
+            ~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:20: Warning: The resource R.string.custom_object_detection appears to be unused [UnusedResources]
+    <string name="custom_object_detection" translatable="false">Custom Object Detector</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/values/strings.xml:31: Warning: The resource R.string.pref_category_automl appears to be unused [UnusedResources]
+    <string name="pref_category_automl" translatable="false">AutoML Image Labeling</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests=true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests=true.
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:84: Information: Add suffix -ktx to enable the Kotlin extensions for this library [KtxExtensionAvailable]
+    implementation "androidx.lifecycle:lifecycle-livedata:2.3.1"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/build.gradle:85: Information: Add suffix -ktx to enable the Kotlin extensions for this library [KtxExtensionAvailable]
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.3.1"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "KtxExtensionAvailable":
+   Android KTX extensions augment some libraries with support for modern
+   Kotlin language features like extension functions, extension properties,
+   lambdas, named parameters, coroutines, and more.
+
+   In Kotlin projects, use the KTX version of a library by replacing the
+   dependency in your build.gradle file. For example, you can replace
+   androidx.fragment:fragment with androidx.fragment:fragment-ktx.
+
+   https://developer.android.com/kotlin/ktx
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/layout/activity_still_image.xml:10: Warning: Missing contentDescription attribute on image [ContentDescription]
+  <ImageView
+   ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, just suppress the lint
+   warning with a tools:ignore="ContentDescription" attribute.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/menu/camera_button_menu.xml:5: Warning: Hardcoded string "Select image from album", should use @string resource [HardcodedText]
+      android:title="Select image from album"
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/res/menu/camera_button_menu.xml:9: Warning: Hardcoded string "Take photo", should use @string resource [HardcodedText]
+      android:title="Take photo"
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+/Users/ayaankhan/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml: Warning: The project references RTL attributes, but does not explicitly enable or disable RTL support with android:supportsRtl in the manifest [RtlEnabled]
+
+   Explanation for issues of type "RtlEnabled":
+   To enable right-to-left support, when running on API 17 and higher, you
+   must set the android:supportsRtl attribute in the manifest <application>
+   element.
+
+   If you have started adding RTL attributes, but have not yet finished the
+   migration, you can set the attribute to false to satisfy this lint check.
+
+0 errors, 56 warnings
